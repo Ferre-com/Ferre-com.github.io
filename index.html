@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio - Ciberseguridad</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de que tu archivo CSS esté correctamente vinculado -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Fuente de íconos -->
+    <title>Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
     <header>
-        <!-- Barra de navegación fija -->
         <nav class="navbar">
             <ul>
                 <li><a href="#about">Sobre Mí</a></li>
                 <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#certifications">Certificados</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
-
         <div class="header-content">
-            <h1>👨‍💻 [Tu Nombre] - Aspiring Cybersecurity Professional</h1>
-            <p>Protegiendo sistemas, redes y datos. Un futuro brillante por delante.</p>
-            <a href="#about" class="btn">Sobre Mí</a>
+            <h1>👨‍💻 Bienvenido a mi mundo cibernético</h1>
+            <p>Explorando, protegiendo y dominando el ciberespacio.</p>
+            <a href="#about" class="btn">Descubre más</a>
         </div>
     </header>
-
-    <!-- Sección Sobre Mí -->
-    <section id="about">
+    
+    <section id="about" class="fade-in">
         <h2>Sobre Mí</h2>
-        <p>Soy un estudiante de ciberseguridad con un fuerte interés en proteger sistemas, redes y datos. Mi objetivo es adquirir experiencia práctica y conocimientos profundos para contribuir a la seguridad digital global.</p>
+        <p>Apasionado por la ciberseguridad, la investigación de vulnerabilidades y la defensa digital. Mi misión es proteger el ciberespacio.</p>
     </section>
-
-    <!-- Sección Habilidades -->
-    <section id="skills">
+    
+    <section id="projects" class="fade-in">
+        <h2>Proyectos Destacados</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>🔓 Pentesting Lab</h3>
+                <p>Laboratorio de pruebas de penetración con entornos controlados.</p>
+            </div>
+            <div class="project-card">
+                <h3>🔍 Análisis de Malware</h3>
+                <p>Investigación y desmontaje de código malicioso.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="fade-in">
         <h2>Habilidades</h2>
-        <ul>
-            <li><i class="fas fa-shield-alt"></i> Pruebas de Penetración (Pentesting)</li>
-            <li><i class="fas fa-hacking"></i> Análisis de Vulnerabilidades</li>
-            <li><i class="fas fa-laptop-code"></i> Uso de herramientas como Nmap, Metasploit</li>
-            <li><i class="fas fa-linux"></i> Linux (Kali Linux, Ubuntu)</li>
-        </ul>
+        <div class="skills-container">
+            <div class="skill"><i class="fas fa-shield-alt"></i> Pentesting</div>
+            <div class="skill"><i class="fas fa-user-secret"></i> OSINT</div>
+            <div class="skill"><i class="fas fa-code"></i> Scripting en Python y Bash</div>
+        </div>
     </section>
-
-    <!-- Barra de Progreso de habilidades -->
-    <div class="progress-bar">
-        <span>Penetration Testing</span>
-        <div class="progress">
-            <div class="progress-fill" style="width: 70%;"></div>
-        </div>
-    </div>
-
-    <!-- Pie de página -->
-    <footer>
-        <p>Conéctame en:</p>
+    
+    <section id="contact" class="fade-in">
+        <h2>Contacto</h2>
+        <p>¡Hablemos de ciberseguridad!</p>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/tu-perfil" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/tu-usuario" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/tu-usuario" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
         </div>
+    </section>
+    
+    <footer>
+        <p>© 2025 | Cybersecurity Enthusiast</p>
     </footer>
 </body>
-
 </html>
