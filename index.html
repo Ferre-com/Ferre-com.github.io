@@ -1,89 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio - Ciberseguridad</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mi Portfolio - Ciberseguridad</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de que tu archivo CSS esté correctamente vinculado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Fuente de íconos -->
 </head>
-<body>
 
-    <!-- Header: Introducción -->
+<body>
     <header>
+        <!-- Barra de navegación fija -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#certifications">Certificados</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+
         <div class="header-content">
-            <h1>👨‍💻 [Santiago] - Aspiring Cybersecurity Professional</h1>
-            <p>Pasión por proteger sistemas, redes y datos. Siempre en la búsqueda de nuevos retos.</p>
+            <h1>👨‍💻 [Tu Nombre] - Aspiring Cybersecurity Professional</h1>
+            <p>Protegiendo sistemas, redes y datos. Un futuro brillante por delante.</p>
             <a href="#about" class="btn">Sobre Mí</a>
         </div>
     </header>
 
-    <!-- Sección "Sobre Mí" -->
+    <!-- Sección Sobre Mí -->
     <section id="about">
-        <div class="section-content">
-            <h2>Sobre Mí</h2>
-            <p>
-                Soy un entusiasta de la ciberseguridad, actualmente en el camino de convertir mi pasión en una carrera profesional.
-                Mi enfoque es siempre aprender, innovar y aplicar conocimientos para defender lo que importa. Me motiva el
-                desafío de proteger redes, sistemas y datos de ataques cibernéticos.
-            </p>
-            <a href="#projects" class="btn">Mis Proyectos</a>
-        </div>
+        <h2>Sobre Mí</h2>
+        <p>Soy un estudiante de ciberseguridad con un fuerte interés en proteger sistemas, redes y datos. Mi objetivo es adquirir experiencia práctica y conocimientos profundos para contribuir a la seguridad digital global.</p>
     </section>
 
-    <!-- Sección de Proyectos -->
-    <section id="projects">
-        <div class="section-content">
-            <h2>Proyectos en Ciberseguridad</h2>
-            <ul>
-                <li><a href="https://github.com/Ferre-com/pentesting-lab">🔒 Pentesting Lab</a> - Practicando técnicas de pruebas de penetración en entornos controlados.</li>
-                <!-- Agregar más proyectos conforme los vayas desarrollando -->
-            </ul>
-            <a href="#skills" class="btn">Mis Habilidades</a>
-        </div>
-    </section>
-
-    <!-- Sección de Habilidades -->
+    <!-- Sección Habilidades -->
     <section id="skills">
-        <div class="section-content">
-            <h2>Habilidades Técnicas</h2>
-            <ul>
-                <li>Pruebas de Penetración (Pentesting)</li>
-                <li>Análisis de Vulnerabilidades</li>
-                <li>Uso de herramientas como Nmap, Metasploit, Burp Suite, Wireshark,TcpDump</li>
-                <li>Linux (Kali Linux, Ubuntu)</li>
-                <li>Conocimientos en Seguridad de Redes (Firewalls, VPNs)</li>
-                <li>Programación (Python, Bash Scripting, C++)</li>
-            </ul>
-            <a href="#certifications" class="btn">Certificados</a>
-        </div>
+        <h2>Habilidades</h2>
+        <ul>
+            <li><i class="fas fa-shield-alt"></i> Pruebas de Penetración (Pentesting)</li>
+            <li><i class="fas fa-hacking"></i> Análisis de Vulnerabilidades</li>
+            <li><i class="fas fa-laptop-code"></i> Uso de herramientas como Nmap, Metasploit, Whireshark, TcpDump, Cathat, Jhon The Ripper</li>
+            <li><i class="fas fa-linux"></i> Linux (Kali Linux, Ubuntu)</li>
+        </ul>
     </section>
 
-    <!-- Sección de Certificados y Educación -->
-    <section id="certifications">
-        <div class="section-content">
-            <h2>Certificados y Educación</h2>
-            <ul>
-                <li><b>Certificado en Ciberseguridad de Google</b> - [Enlace al certificado]</li>
-                <li><b>Curso de Pentesting Avanzado</b> - [Enlace al curso]</li>
-                <!-- Agregar más certificados a medida que los vayas obteniendo -->
-            </ul>
-            <a href="#contact" class="btn">Contacto</a>
+    <!-- Barra de Progreso de habilidades -->
+    <div class="progress-bar">
+        <span>Penetration Testing</span>
+        <div class="progress">
+            <div class="progress-fill" style="width: 70%;"></div>
         </div>
-    </section>
+    </div>
 
-    <!-- Sección de Contacto -->
-    <section id="contact">
-        <div class="section-content">
-            <h2>Contacto</h2>
-            <p>Si deseas hablar conmigo o tienes alguna consulta, no dudes en contactarme:</p>
-            <p>LinkedIn: <a href="www.linkedin.com/in/santiago-ferreyra-4048532b9">Santiago Ferreyra</a></p>
-        </div>
-    </section>
-
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
+        <p>Conéctame en:</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tu-perfil" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/tu-usuario" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/tu-usuario" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
     </footer>
-
 </body>
-</html>
 
+</html>
