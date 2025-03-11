@@ -8,92 +8,100 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Ciberseguridad</div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <!-- Pantalla de carga -->
+    <div id="loading-screen">
+        <div class="hacker-animation">
+            <div class="hacker">
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="laptop"></div>
             </div>
-        </nav>
-    </header>
-
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Hola, soy <span class="highlight">Santiago</span></h1>
-            <p>Especialista en Ciberseguridad | Pentester | Desarrollador Seguro</p>
-            <a href="#proyectos" class="btn">Ver Mi Proyecto</a>
+            <div class="text">Hackeando el sistema...</div>
         </div>
-    </section>
+    </div>
 
-    <section id="sobre-mi" class="about">
-        <h2>Sobre Mí</h2>
-        <div class="about-content">
-            <p>La ciberseguridad es un campo que desafía y potencia las capacidades intelectuales, y para mí representa una pasión más que una profesión. Me motiva la oportunidad de desarrollar habilidades y aplicar mi conocimiento para proteger a personas y organizaciones frente a amenazas digitales.
-                Mi enfoque combina curiosidad, innovación y un pensamiento analítico estructurado, el cual he ido perfeccionando a lo largo de mi carrera en Ingeniería. Me esfuerzo por abordar problemas de manera objetiva, analizando cada desafío desde múltiples perspectivas hasta encontrar soluciones efectivas.
-                Aunque estoy iniciando mi camino en ciberseguridad, me entusiasma la amplitud de áreas en las que puedo aportar, desde la defensa en equipos Blue Team y la simulación de ataques en Red Team hasta la informática forense. Mi compromiso es seguir aprendiendo y creciendo en este campo para contribuir a un ecosistema digital más seguro.</p>
-        </div>
-    </section>
+    <!-- Contenido principal (oculto inicialmente) -->
+    <div id="main-content" class="hidden">
+        <header>
+            <nav>
+                <div class="logo">Santiago</div>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
 
-    <section id="habilidades" class="skills">
-        <h2>Habilidades</h2>
-        <div class="skills-grid">
-            <div class="skill">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Pentesting</h3>
-                <p>Pruebas de penetración, análisis de vulnerabilidades.</p>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Hola, soy <span class="highlight">Santiago</span></h1>
+                <p>Analista en Ciberseguridad | Pentester jr | Estudiante de Ingenieria en Sistemas</p>
+                <a href="#proyectos" class="btn">Ver Mi Proyecto</a>
             </div>
-            <div class="skill">
-                <i class="fas fa-lock"></i>
-                <h3>Seguridad Web</h3>
-                <p>OWASP Top 10, hardening de aplicaciones.</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-code"></i>
-                <h3>Desarrollo Seguro</h3>
-                <p>Prácticas de codificación segura, revisión de código.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="proyectos" class="projects">
-        <h2>Proyectos</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x250" alt="Proyecto 1">
-                <h3>Pentesting Lab Setup</h3>
-                <p>Establecimiento de un espacio seguro para realizar practicas de Pentesting.</p>
-                <a href="https://github.com/tu-usuario/tu-repositorio" class="btn" target="_blank">Ver en GitHub</a>
+        <section id="sobre-mi" class="about">
+            <h2>Sobre Mí</h2>
+            <div class="about-content">
+                <p>Soy un apasionado de la ciberseguridad con experiencia en pruebas de penetración, análisis de vulnerabilidades y desarrollo seguro. Mi objetivo es proteger sistemas y datos de amenazas cibernéticas.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contacto" class="contact">
-        <h2>Contacto</h2>
-        <form action="#" method="post">
-            <input type="text" name="nombre" placeholder="Tu Nombre" required>
-            <input type="email" name="email" placeholder="Tu Email" required>
-            <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
-            <button type="submit" class="btn">Enviar Mensaje</button>
-        </form>
-    </section>
+        <section id="habilidades" class="skills">
+            <h2>Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Pentesting</h3>
+                    <p>Pruebas de penetración, análisis de vulnerabilidades.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-lock"></i>
+                    <h3>Seguridad Web</h3>
+                    <p>OWASP Top 10, hardening de aplicaciones.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>Desarrollo Seguro</h3>
+                    <p>Prácticas de codificación segura, revisión de código.</p>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2023 [Tu Nombre]. Todos los derechos reservados.</p>
-        <div class="social-links">
-            <a href="https://github.com/tu-usuario" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-    </footer>
+        <section id="proyectos" class="projects">
+            <h2>Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Proyecto 1">
+                    <h3>Análisis de Vulnerabilidades</h3>
+                    <p>Descripción breve del proyecto de análisis de vulnerabilidades.</p>
+                    <a href="https://github.com/tu-usuario/tu-repositorio" class="btn" target="_blank">Ver en GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <h2>Contacto</h2>
+            <p>Si deseas contactarme, envíame un correo electrónico:</p>
+            <a href="santyferreyrausa@gmail.com" class="btn">Enviar correo</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Santiago. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/tu-usuario" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="www.linkedin.com/in/santiagoferreyra-uy"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </div>
 
     <script src="scripts.js"></script>
 </body>
