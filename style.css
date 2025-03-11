@@ -1,79 +1,108 @@
-/* Estilo épico con tema cyberpunk */
+/* Estilos generales */
 body {
-    background-color: #0a0a0a;
-    color: #0ff;
-    font-family: 'Courier New', monospace;
-    text-align: center;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #fff;
+    overflow-x: hidden;
 }
 
-h1, h2, h3 {
-    text-shadow: 0 0 10px #0ff;
+/* Glassmorphism effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
 }
 
 .navbar ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    list-style: none;
-    padding: 20px 0;
-    background: rgba(0, 255, 255, 0.1);
-}
-
-.navbar ul li {
-    margin: 0 15px;
+    gap: 20px;
 }
 
 .navbar a {
-    color: #0ff;
+    color: #00ffee;
     text-decoration: none;
     font-size: 18px;
     transition: 0.3s;
 }
 
 .navbar a:hover {
-    color: #ff0;
-    text-shadow: 0 0 5px #ff0;
+    color: #ff00ff;
 }
 
-.header-content {
-    margin-top: 50px;
-    animation: fadeIn 2s;
-}
-
-.btn {
+/* Botón épico */
+.btn-glow {
     display: inline-block;
     padding: 10px 20px;
-    background: #0ff;
+    background: linear-gradient(45deg, #00ffee, #ff00ff);
     color: #000;
     font-weight: bold;
-    border-radius: 5px;
     text-decoration: none;
-    transition: 0.3s;
+    border-radius: 25px;
+    transition: 0.4s;
+    box-shadow: 0 0 15px #00ffee;
 }
 
-.btn:hover {
-    background: #ff0;
-    box-shadow: 0 0 10px #ff0;
+.btn-glow:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff00ff;
+}
+
+/* Animaciones */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Tarjetas de proyectos */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .project-card {
-    background: rgba(0, 255, 255, 0.2);
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #0ff;
-    transition: 0.3s;
+    width: 300px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: 0.4s;
 }
 
 .project-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px #ff0;
+    box-shadow: 0 0 15px #ff00ff;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
+/* Footer */
+.glass-footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
 }
