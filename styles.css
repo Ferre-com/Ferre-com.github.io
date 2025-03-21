@@ -233,6 +233,60 @@ nav {
     margin-bottom: 1rem;
     color: #00ffcc;
 }
+/* Certifications Section */
+.certifications {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.certifications-container {
+    display: flex;          /* Use flexbox for the two-column layout */
+    justify-content: space-around; /* Distribute space evenly */
+    align-items: flex-start;   /* Align items to the top */
+    margin-top: 2rem;
+}
+
+.ctfs-badges, .certificates {
+    width: 45%;            /* Adjust as needed to control column width */
+    text-align: center;
+}
+
+.image-stack {
+    position: relative;     /* Important for stacking context */
+    width: 200px;           /* Adjust the width of the stack */
+    height: 150px;          /* Adjust the height of the stack */
+    margin: 20px auto;      /* Center the stack horizontally */
+}
+
+.stacked-image {
+    position: absolute;     /* Absolutely position images within the stack */
+    top: 0;
+    left: 0;
+    width: 100%;            /* Make images fill the stack container */
+    height: 100%;           /* Make images fill the stack container */
+    object-fit: contain;    /* Ensure images fit without distortion */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease-in-out; /* Smooth transition for animations */
+}
+
+/* Initial stacking order */
+.stacked-image:nth-child(1) {
+    z-index: 3;             /* Frontmost image */
+    transform: translateX(0) translateY(0) scale(1);
+}
+
+.stacked-image:nth-child(2) {
+    z-index: 2;
+    transform: translateX(10px) translateY(5px) scale(0.9);
+    opacity: 0.7;
+}
+
+.stacked-image:nth-child(3) {
+    z-index: 1;
+    transform: translateX(20px) translateY(10px) scale(0.8);
+    opacity: 0.5;
+}
 
 .project-card img {
     width: 100%;
@@ -272,4 +326,11 @@ footer {
 
 .social-links a:hover {
     color: #00ffcc;
+}
+.image-stack {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin: 20px auto;
+    overflow: visible; /*  Ensure all images in the stack are visible  */
 }
